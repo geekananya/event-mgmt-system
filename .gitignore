@@ -1,0 +1,11 @@
+.idea/
+.DS_Store
+__pycache__/
+*.log
+*.pot
+*.pyc
+media
+
+env/
+venv/
+.env
