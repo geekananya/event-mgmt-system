@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-b83vpbay+gr&%-+n8@a&gue%sli!um79_i8d7wr^8&uv+*@z=@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -76,17 +76,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'project.wsgi.application'
 
-#
-# REST_FRAMEWORK = {
-#     'DEFAULT_AUTHENTICATION_CLASSES': (
-#                'rest_framework.authentication.TokenAuthentication',
-#     ),
-#     # 'DEFAULT_PERMISSION_CLASSES':(
-#     #             'rest_framework.permissions.IsAuthenticated',
-#     # ),
-#
-# }
-
 
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
@@ -95,6 +84,9 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+    },
+    'test': {
+        'NAME': "test_DB",
     }
 }
 

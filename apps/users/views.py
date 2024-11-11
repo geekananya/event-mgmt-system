@@ -1,6 +1,5 @@
 from django.core.exceptions import ObjectDoesNotExist
-from rest_framework.status import HTTP_403_FORBIDDEN, HTTP_401_UNAUTHORIZED, HTTP_400_BAD_REQUEST, HTTP_201_CREATED, \
-    HTTP_200_OK
+from rest_framework.status import HTTP_403_FORBIDDEN, HTTP_401_UNAUTHORIZED, HTTP_400_BAD_REQUEST, HTTP_201_CREATED, HTTP_200_OK
 from rest_framework.decorators import api_view, authentication_classes, permission_classes
 from rest_framework.authentication import SessionAuthentication, TokenAuthentication
 from rest_framework.response import Response
@@ -28,21 +27,14 @@ def get_user_by_id(request, pk):
 def register(request):
 
     serialiser = UserAuthSerializer(data=request.data)
-    print('1')
 
     if serialiser.is_valid():
-        print('2')
         serialiser.save()
-        print('3')
         user = User.objects.get(email=request.data.get('email'))
-        print('4')
         user.set_password(request.data.get('password'))
 
-        print('5')
         user.save()
-        print('6')
         token = Token.objects.create(user=user)
-        print('7')
         return Response({'token': token.key, 'user': serialiser.data}, status=HTTP_201_CREATED)
 
     return Response({'error': serialiser.errors})
