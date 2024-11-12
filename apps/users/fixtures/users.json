@@ -1,0 +1,58 @@
+[
+    {
+        "model": "users.user",
+        "pk": 1,
+        "fields": {
+            "first_name": "",
+            "last_name": "",
+            "email": "admin@gmail.com",
+            "username": "admin",
+            "password": "pbkdf2_sha256$720000$ueFHY9sIHZ6XaBl4110YrA$/n39Xn7ce3S4AGwe4yyA315Gda7ZOhLMG7XVbsNQPyg=",
+            "is_active": true,
+            "is_staff": true,
+            "is_admin": true
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 2,
+        "fields": {
+            "first_name": "",
+            "last_name": "",
+            "email": "ananyav@gmail.com",
+            "username": "ananyav",
+            "password": "pbkdf2_sha256$720000$ts8CbSfrmHfP9DO05q3455$gJBZIco/+HT4Pp7rILUQ6NMlBajO1LwhtVC2hH/1/1w=",
+            "is_active": true,
+            "is_staff": false,
+            "is_admin": false
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 3,
+        "fields": {
+            "first_name": "Dummy",
+            "last_name": "User",
+            "email": "dummy@user.com",
+            "username": "dummy",
+            "password": "pbkdf2_sha256$720000$wy375FmdajVzMg6ID76Qo1$x+IzQvt49glDmxQGgqkg+uonYmKzrXhn46M6B1fsfuM=",
+            "is_active": true,
+            "is_staff": false,
+            "is_admin": false
+        }
+    },
+    {
+        "model": "users.user",
+        "pk": 10,
+        "fields": {
+            "first_name": "Sample",
+            "last_name": "",
+            "email": "sample@user.com",
+            "username": "sampleuser",
+            "password": "pbkdf2_sha256$720000$vY7jZ5lBBKAFZYwDXk3j0v$7pnBbW/UuYGksPqCTOvC6FwVKW47eiNcsb0zyLygxAY=",
+            "is_active": true,
+            "is_staff": true,
+            "is_admin": false
+        }
+    }
+]
