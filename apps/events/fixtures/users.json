@@ -1,0 +1,47 @@
+[
+  {
+    "model": "users.User",
+    "pk": 1,
+    "fields": {
+      "email": "user1@email.com",
+      "password": "hashed_password1",
+      "is_admin": false
+    }
+  },
+  {
+    "model": "users.User",
+    "pk": 2,
+    "fields": {
+      "email": "user2@email.com",
+      "password": "hashed_password2",
+      "is_admin": false
+    }
+  },
+  {
+    "model": "users.User",
+    "pk": 3,
+    "fields": {
+      "email": "user3@email.com",
+      "password": "hashed_password3",
+      "is_admin": true
+    }
+  },
+  {
+    "model": "users.User",
+    "pk": 4,
+    "fields": {
+      "email": "user4@email.com",
+      "password": "hashed_password4",
+      "is_admin": false
+    }
+  },
+  {
+    "model": "users.User",
+    "pk": 5,
+    "fields": {
+      "email": "user5@email.com",
+      "password": "hashed_password5",
+      "is_admin": false
+    }
+  }
+]
